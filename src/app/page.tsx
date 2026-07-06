@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, type FormEvent } from "react";
+import Image from "next/image";
 import { addIntegrante, subscribeIntegrantes } from "@/services/integranteService";
 import { addDuelo, subscribeDuelos } from "@/services/dueloService";
 import { computeStandings } from "@/services/standingsService";
@@ -95,6 +96,13 @@ export default function Home() {
       <header className="relative overflow-hidden rounded-2xl border border-l-4 border-l-primary bg-card text-card-foreground p-6 shadow-lg shadow-black/40">
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-primary/10 via-transparent to-transparent" />
         <div className="relative flex flex-wrap items-center gap-3">
+          <Image
+            src="/images/560.png"
+            alt="Copa 5-60"
+            width={48}
+            height={48}
+            className="rounded-full"
+          />
           <span className="rounded-full bg-primary px-2.5 py-0.5 text-xs font-bold uppercase tracking-wider text-primary-foreground">
             Copa
           </span>

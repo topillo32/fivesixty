@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, type FormEvent, type ReactNode } from "react";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -51,7 +52,15 @@ export function PinGate({ children }: { children: ReactNode }) {
       <div className="flex min-h-screen items-center justify-center bg-background p-6">
         <Card className="w-full max-w-xs border-t-4 border-t-primary shadow-lg shadow-black/50">
           <CardHeader className="text-center">
-            <CardTitle className="text-primary">Copa 5-60</CardTitle>
+            <Image
+              src="/images/560.png"
+              alt="Copa 5-60"
+              width={80}
+              height={80}
+              className="mx-auto mb-2 rounded-full"
+              priority
+            />
+            <CardTitle className="text-primary">5-60 Taper Team</CardTitle>
             <CardDescription>
               Ingresá el código para continuar
             </CardDescription>
