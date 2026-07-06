@@ -6,8 +6,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "FiveSixtyApp",
-  description: "FiveSixtyApp",
+  title: "Cup 5-60 Taper",
+  description: "Cup 5-60 Taper App",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
