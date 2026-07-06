@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 6%;
+    --foreground: 0 0% 96%;
+
+    --card: 0 0% 9%;
+    --card-foreground: 0 0% 96%;
+
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 96%;
+
+    --primary: 0 74% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 92%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 62%;
+
+    --accent: 0 0% 16%;
+    --accent-foreground: 0 0% 96%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 18%;
+    --input: 0 0% 16%;
+    --ring: 0 74% 52%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 0 0% 6%;
+    --foreground: 0 0% 96%;
+
+    --card: 0 0% 9%;
+    --card-foreground: 0 0% 96%;
+
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 96%;
+
+    --primary: 0 74% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 92%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 62%;
+
+    --accent: 0 0% 16%;
+    --accent-foreground: 0 0% 96%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 18%;
+    --input: 0 0% 16%;
+    --ring: 0 74% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background-image: radial-gradient(
+      circle at 50% -10%,
+      hsl(0 74% 30% / 0.35),
+      transparent 55%
+    );
+    background-attachment: fixed;
+  }
+}
