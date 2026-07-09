@@ -6,6 +6,12 @@ export interface Integrante {
   createdAt: number;
 }
 
+export interface IntegrantePhoto {
+  id: string;
+  nombre: string;
+  url: string;
+}
+
 export interface Duelo {
   id: string;
   liga: string;
